@@ -1,0 +1,161 @@
+ 
+  .header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    top: 10;
+    z-index: 1000;
+  }
+
+  .header .navigation a {
+    
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+  }
+
+  .header .navigation a:hover {
+   
+    background-color: white;
+   padding: 10px;
+   border-radius: 25px;
+  }
+
+
+  .section1{
+    background-image: url('Resoures/Home/banenr.png.jpg');
+  }
+
+  
+
+  footer {
+  
+    background-color: #213A57;
+    color: #f8f1f1;
+    text-align: center;
+    padding: 05px 0;
+    bottom: 0;
+  
+
+    
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+  
+    
+  }
+
+  .footer-logo {
+    flex: 1 1 200px;
+    max-width: 200px;margin-top: 100px;
+    margin-right: 30px;
+  }
+
+  .footer-nav {
+    flex: 1 1 400px;
+    text-align: left;
+  
+  }
+
+  .footer-nav h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f9f4f4;
+  }
+
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-nav ul li a {
+    color: #f9f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-nav ul li a:hover {
+    color: #877429; /* Yellow color on hover */
+  }
+
+  .footer-contact {
+    flex: 1 1 300px;
+    text-align: left;
+    color: #f9f4f4;
+  }
+
+  .footer-contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .footer-contact p {
+    margin-bottom: 8px;
+    
+  }
+
+  .footer-social {
+    flex: 1 1 200px;
+    text-align: center;
+    color: #f9f4f4;
+  }
+
+  .footer-social h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .container{
+   font-size: 0.8em;
+   color: white;
+   text-align: center;
+  }
+
+  .social-icons{
+	padding:30px;
+	background-color:#213A57;
+  text-align: center;
+}
+.social-icons a{
+	color:#fff;
+  line-height:30px;
+  font-size:30px;
+  margin: 0 5px;
+  text-decoration:none;
+  
+}
+.social-icons a i{
+	line-height:30px;
+  font-size:30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+
