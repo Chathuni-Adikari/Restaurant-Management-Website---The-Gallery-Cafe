@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container5 {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: black;
+            padding: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container5 h1{
+            color: white;
+        }
+        .container5 h2{
+            color: white;
+        }
+
+        #searchInput {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #foodList {
+            display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    column-gap:  30px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        .food-item {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .food-item:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container5">
+        <h1>Search Food by Cuisine</h1>
+        <input type="text" id="searchInput" onkeyup="searchFood()" placeholder="Search for cuisines..">
+
+        <ul id="foodList">
+
+            <li class="food-item" data-cuisine="Sri Lankan">Fish Cutlets</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Spicy Prawn Cocktail</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Vegetable Roti</li>
+            <li class="food-item" data-cuisine="Chinese">Chicken Dumplings</li>
+            <li class="food-item" data-cuisine="Chinese">Crispy Prawn Wontons</li>
+            <li class="food-item" data-cuisine="Chinese">Vegetable Lettuce Wraps</li>
+            <li class="food-item" data-cuisine="Italian"> Bruschetta</li>
+            <li class="food-item" data-cuisine="Italian">Caprese Salad</li>
+            <li class="food-item" data-cuisine="Italian"> Antipasto Platter</li>
+
+
+
+            <li class="food-item" data-cuisine="Sri Lankan"> Prawn Curry </li>
+            <li class="food-item" data-cuisine="Sri Lankan">Crab Curry</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Fish Ambul Thiyal</li>
+            <li class="food-item" data-cuisine="Chinese">Kung Chicken</li>
+            <li class="food-item" data-cuisine="Chinese">Beef with Broccoli</li>
+            <li class="food-item" data-cuisine="Chinese">Mapo Tofu</li>
+            <li class="food-item" data-cuisine="Italian">Pepperoni Pizza</li>
+            <li class="food-item" data-cuisine="Italian">Lasagna</li>
+            <li class="food-item" data-cuisine="Italian">Chicken Parmigiana</li>
+
+
+
+
+            <li class="food-item" data-cuisine="Sri Lankan">Lamprais</li>
+            <li class="food-item" data-cuisine="Sri Lankan">String Hoppers with Curry</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Hoppers with Lunu Miris</li>
+            <li class="food-item" data-cuisine="Chinese">Yangzhou Fried Rice</li>
+            <li class="food-item" data-cuisine="Chinese">Hokkien Noodles</li>
+            <li class="food-item" data-cuisine="Chinese">Steamed Jasmine Rice</li>
+            <li class="food-item" data-cuisine="Italian"> Spaghetti Carbonara</li>
+            <li class="food-item" data-cuisine="Italian">Risotto Milanese</li>
+            <li class="food-item" data-cuisine="Italian"> Fettuccine Alfredo</li>
+           
+
+
+
+            <li class="food-item" data-cuisine="Sri Lankan">Watalappam</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Kiri Pani</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Coconut Pancake</li>
+            <li class="food-item" data-cuisine="Chinese">Mango Pudding</li>
+            <li class="food-item" data-cuisine="Chinese">Sesame Balls</li>
+            <li class="food-item" data-cuisine="Chinese">Fried Banana with Ice Cream</li>
+            <li class="food-item" data-cuisine="Italian"> Tiramisu</li>
+            <li class="food-item" data-cuisine="Italian">Panna Cotta</li>
+            <li class="food-item" data-cuisine="Italian"> Gelato</li>
+           
+
+
+        
+            <li class="food-item" data-cuisine="Sri Lankan">Fresh King Coconut</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Sri Lankan Milk Tea</li>
+            <li class="food-item" data-cuisine="Sri Lankan">Fruit Juice (Mango, Pineapple)</li>
+            <li class="food-item" data-cuisine="Chinese">Chinese Tea</li>
+            <li class="food-item" data-cuisine="Chinese">Lychee Juice</li>
+            <li class="food-item" data-cuisine="Chinese">Chilled Lemon Tea</li>
+            <li class="food-item" data-cuisine="Italian"> Espresso</li>
+            <li class="food-item" data-cuisine="Italian">Cappuccino</li>
+            <li class="food-item" data-cuisine="Italian"> Italian Lemonade</li>
+           
+        </ul>
+    </div>
+    <script>
+        function searchFood() {
+            var input, filter, ul, li, i;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('foodList');
+            li = ul.getElementsByClassName('food-item');
+
+            for (i = 0; i < li.length; i++) {
+                var cuisine = li[i].getAttribute('data-cuisine');
+                if (cuisine.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

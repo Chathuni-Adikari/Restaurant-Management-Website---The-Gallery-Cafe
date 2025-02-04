@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-image: url('Resoures/Home/banenr.png.jpg');
+            color: #d6bd95;
+            padding: 8px;
+            text-align: center;
+        }
+
+        
+        .logout {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .logout:hover {
+            background-color: #443838;
+        }
+        
+        .container {
+            display: flex;
+            height: calc(100vh - 40px);
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #032030;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .sidebar h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar ul {
+            margin-top: 60px;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        
+        .sidebar ul li a {
+            margin-top: 40px;
+            color: #d6bd95;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #44444420;
+            border-radius: 4px;
+        }
+        
+        .sidebar ul li a:hover {
+            background-color: #555;
+        }
+        .sidebar button{
+            background-color: #d6bd95;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .main-content h2{
+            text-align: center;
+            color: #032030;
+            font-size: 1.9em;
+        }
+        
+        .container-dash {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 60px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            justify-items: center;
+        }
+        
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+            width: 100%;
+            max-width: 300px;
+        }
+        
+        .card img {
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .card h3 {
+            margin: 15px 0;
+        }
+        
+        .card button {
+            background-color: rgb(127, 146, 190);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .card button:hover {
+            background-color: #f0ff4bb6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> 𝔗𝔥𝔢 𝔊𝔞𝔩𝔩𝔢𝔯𝔶 ℭ𝔞𝔣𝔢 </h1>
+
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="admin/admin_reservation.php" target="_parent">Reservation Details</a></li>
+                <li><a href="admin/cart_checkout.php" target="_parent">Pre-Ordering Details</a></li>
+                <li><a href="admin/information.php">Features & Facilities</a></li>
+                <center><button onclick="document.location='home.html'">Sign Out</button></center>
+
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2><br><br> Operational Staff Dashboard</h2>
+            <div class="container-dash">
+
+                <div class="card">
+                    <img src="admin/admin_img/res01.png" alt="Users">
+                    <h3>Reservation Details</h3>
+                    <button onclick="document.location='admin/admin_reservation.php'">Go To Setting</button>
+                </div>
+
+
+                <div class="card">
+                    <img src="admin/admin_img/s01.png" alt="General Setting">
+                    <h3>Pre-ordering Details</h3>
+                    <button onclick="document.location='admin/cart_checkout.php'">Go To Setting</button>
+                </div>
+
+                <div class="card">
+                    <img src="admin/admin_img/faci1.png" alt="Features & Facilities">
+                    <h3>Features & Facilities</h3>
+                    <button onclick="document.location='admin/information.php'">Go To Setting</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
