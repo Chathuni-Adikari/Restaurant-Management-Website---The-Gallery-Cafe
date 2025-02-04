@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+    color: #d6bd95;
+    font-family: system-ui;
+    text-align: center;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+    margin-left: 350px;
+}
+
+.container2{
+    float: left;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 60px;
+    margin-left: 50px;
+    line-height: 150px;
+}
+.container2 h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    font-size: 1.8em;
+}
+.container2 h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6em;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+header h1{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+margin-bottom: 50px;
+}
+
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width: 50px;
+    height: 50px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 125px;
+    margin-top: 50px;
+}
+
+.list .item{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    letter-spacing: 1px;
+    border-radius: 50px 0 50px 0;
+   
+}
+.list .item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+    margin-bottom: 10px;
+}
+.list .item .title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-weight: bold;
+    color: #032030;
+}
+.list .item .price{
+    margin: 10px;
+    font-weight: bold;
+    color: #032030;
+}
+.list .item button{
+    background-color: #032030;
+    color: #fff;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.list .item button:hover{
+    color: #E8BC0E;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #DCE0E1;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #032030;
+    font-weight: 100;
+    margin-left: 160px;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.card .checkOut div{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.card .checkOut div:nth-child(2){
+    background-color: black;
+    color: #fff;
+}
+.card .checkOut .out a{
+    background-color: black;
+    color: #d6bd95;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.listCard li{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #213A57;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+
+
+
+

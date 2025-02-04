@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Cafe -Cart</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style> 
+    
+
+    
+    .header {
+        background-color: black;
+        padding: 5px 0;
+        text-align: left;
+        position: sticky;
+        width: 100%;
+        top: 10;
+        z-index: 1000;
+        color: #d6bd95;
+      }
+    
+      .header .navigation {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+      }
+    
+      .header .navigation a {
+        
+        color: #0f0f0f;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: opacity 0.3s ease;
+      }
+    
+      .header .navigation a:hover {
+       
+        background-color: #a4c4e8;
+      }
+
+
+    .container3 {
+    color: white;
+    background-color: #032030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+}
+
+.container3 h1 {
+    color: #d6bd95 ;
+    font-size: 34px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #FFC566;
+   padding: 10px;
+   border-radius: 25px;
+}
+
+
+      </style>
+
+</head>
+
+<body class="">
+
+
+    <div class="container3">
+        <img src="image/lgMy.png" width="130px" height="90px" >
+        <h1> 𝔗𝔥𝔢 𝔊𝔞𝔩𝔩𝔢𝔯𝔶 ℭ𝔞𝔣𝔢 </h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="cart/cart.html">Pre-ordering</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="home.html">Sign Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <aside class="container2" >
+        
+        <h2 class="section-heading"> Appetizers </h2>
+        <h3>Sri Lankan</h3><br><br>
+        <h3>Chinese</h3><br><br>
+        <h3>Italian</h3><br>
+
+        <h2 class="section-heading"> Main Dishes</h2>
+        <h3>Sri Lankan</h3><br>
+        <h3>Chinese</h3><br>
+        <h3>Italian</h3><br>
+
+        <h2 class="section-heading"> Rice and Noodles</h2>
+        <h3>Sri Lankan</h3><br><br>
+        <h3>Chinese</h3><br><br>
+        <h3>Italian</h3><br>
+
+        <h2 class="section-heading"> Desserts</h2>
+        <h3>Sri Lankan</h3><br>
+        <h3>Chinese</h3><br><br>
+        <h3>Italian</h3><br>
+
+        <h2 class="section-heading"> Beverages</h2>
+        <h3>Sri Lankan</h3><br>
+        <h3>Chinese</h3><br><br>
+        <h3>Italian</h3><br>
+    
+    </aside>
+    
+
+
+    <div class="container">
+        <header>
+
+            <h1>Our Menu<hr width="110" Size="3" color=#d6bd95></h1>
+            <div class="shopping">
+                <img src="image/cart.png">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+
+        <div class="list"></div></div>
+
+
+    <div class="card">
+        <h1>Checkout</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">LKR 0<br></div>
+            <div class="out"><a href="checkout.html" class="button">Checkout</a></div>
+            <div class="closeShopping">Close</div>  
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
