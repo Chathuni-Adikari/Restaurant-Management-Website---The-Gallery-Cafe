@@ -57,9 +57,9 @@ Step 1: Clone the Repository
 
 Step 2: Set Up the Server
 
-Install XAMPP, WAMP, LAMP, or MAMP.
+Install WAMP
 
-Move project files to the htdocs (XAMPP) or equivalent directory.
+Move project files to the htdocs (WAMP) or equivalent directory.
 
 Step 3: Import the Database
 
